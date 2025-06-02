@@ -6,18 +6,6 @@
 - GitHub Actions
 - Pytest for testing
 
-## Project Structure
-```
-.
-├── src/
-│   └── calculator.py
-├── tests/
-│   └── test_calculator.py
-├── Dockerfile
-├── requirements.txt
-└── README.md
-```
-
 ## Implementation Steps
 
 1. Created a basic calculator application in Python
@@ -47,18 +35,15 @@ The CI pipeline is implemented using GitHub Actions and consists of the followin
 
 1. Clone the repository
 2. Install dependencies:
-   ```bash
    pip install -r requirements.txt
-   ```
+
 3. Run tests:
-   ```bash
    python -m pytest tests/
-   ```
+
 4. Build and run Docker container:
-   ```bash
    docker build -t calculator-app .
    docker run calculator-app
-   ```
+
 
 ## Test Cases
 The application includes the following test cases:
